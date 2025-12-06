@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Participă la giveaway-ul Mayie și câștigă rutina noastră Supreme Anti-Aging + vouchere cadou. 9-12 decembrie 2025.">
+    <title>Giveaway Mayie - Câștigă Supreme Anti-Aging Routine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="badge">9–12 decembrie 2025</span>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Intră în giveaway-ul Supreme Anti-Aging Mayie</h1>
+                    <p class="hero-subtitle">Câștigă rutina noastră completă anti-aging și vouchere cadou pentru mayie.ro</p>
+                    <a href="#form-section" class="btn btn-primary btn-large">Înscrie-te în giveaway</a>
+                </div>
+                
+                <div class="hero-image">
+                    <!-- TODO: Replace with actual product image -->
+                    <div class="image-placeholder">
+                        <img src="https://via.placeholder.com/500x500/f5f5f5/999?text=Supreme+Anti-Aging+Routine" alt="Supreme Anti-Aging Routine Mayie">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Participate Section -->
+    <section class="how-to-participate">
+        <div class="container">
+            <h2 class="section-title">Cum participi?</h2>
+            <p class="section-intro">Înscrierea este validă doar dacă îndeplinești <strong>ambii pași</strong>:</p>
+            
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Etichetează o prietenă</h3>
+                        <p>Intră pe postarea de giveaway de pe Facebook sau Instagram și etichetează un prieten sau o prietenă în comentarii.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Abonează-te la newsletter</h3>
+                        <p>Completează formularul de mai jos și abonează-te la newsletter-ul Mayie pentru a-ți valida participarea.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section class="prizes">
+        <div class="container">
+            <h2 class="section-title">Ce poți câștiga?</h2>
+            
+            <div class="prize-cards">
+                <div class="prize-card prize-main">
+                    <div class="prize-badge">Premiul mare</div>
+                    <h3>Supreme Anti-Aging Routine</h3>
+                    <p class="prize-description">
+                        Rutina completă anti-aging Mayie, creată pentru a-ți oferi beneficii vizibile: 
+                        <strong>hidratare intensă, fermitate, luminozitate</strong> și o textură mai fină a pielii. 
+                        O îngrijire completă, bazată pe ingrediente active dovedite științific.
+                    </p>
+                    <a href="https://www.mayie.ro/products/supreme-anti-aging-routine?_pos=1&_sid=8d5675c52&_ss=r" 
+                       target="_blank" 
+                       class="btn btn-secondary">
+                        Vezi produsul
+                    </a>
+                </div>
+                
+                <div class="prize-card">
+                    <div class="prize-badge">Premii suplimentare</div>
+                    <h3>Vouchere cadou Mayie</h3>
+                    <p class="prize-description">
+                        Mai mulți câștigători norocoși vor primi vouchere cadou pentru cumpărături pe mayie.ro. 
+                        <strong>Șanse duble de bucurie</strong> pentru tine și prietena pe care o etichetezi!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Form Section -->
+    <section id="form-section" class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2 class="section-title">Înscrie-te acum</h2>
+                <p class="form-intro">Completează datele tale și intră în giveaway. Nu uita să etichetezi și o prietenă în postarea de pe social media!</p>
+                
+                <!-- Success Message (hidden by default) -->
+                <div id="success-message" class="message message-success" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <div>
+                        <strong>Mulțumim!</strong>
+                        <p>Ești înscrisă în giveaway. Nu uita să etichetezi un prieten sau o prietenă în postarea de giveaway de pe Facebook/Instagram, dacă nu ai făcut-o deja.</p>
+                    </div>
+                </div>
+                
+                <!-- Error Message (hidden by default) -->
+                <div id="error-message" class="message message-error" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                    <div>
+                        <strong>A apărut o eroare</strong>
+                        <p id="error-text">Te rugăm să încerci din nou.</p>
+                    </div>
+                </div>
+                
+                <!-- Form -->
+                <form id="giveaway-form" class="giveaway-form">
+                    <div class="form-group">
+                        <label for="firstname">Prenume *</label>
+                        <input 
+                            type="text" 
+                            id="firstname" 
+                            name="firstname" 
+                            required 
+                            placeholder="Introdu prenumele tău"
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Adresă de email *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="exemplu@email.ro"
+                        >
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input 
+                                type="checkbox" 
+                                id="gdpr-consent" 
+                                name="gdpr_consent" 
+                                required
+                            >
+                            <span class="checkbox-text">
+                                Sunt de acord să primesc newsletter-ul Mayie cu noutăți, promoții și recomandări personalizate.
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <p class="trust-text">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        Ne place transparența: nu facem spam, te poți dezabona oricând.
+                    </p>
+                    
+                    <button type="submit" class="btn btn-primary btn-large btn-full">
+                        Mă înscriu în giveaway
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Benefits Section -->
+    <section class="newsletter-benefits">
+        <div class="container">
+            <h2 class="section-title">De ce să te abonezi la newsletter-ul Mayie?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg>
+                    </div>
+                    <h3>Fii primul la curent</h3>
+                    <p>Află prima despre lansări noi și promoții speciale înainte să le vadă toată lumea.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3>Sfaturi bazate pe știință</h3>
+                    <p>Primești recomandări de îngrijire a tenului bazate pe cercetare, nu pe promisiuni magice.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path>
+                            <path d="M4 6v12c0 1.1.9 2 2 2h14v-4"></path>
+                            <path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z"></path>
+                        </svg>
+                    </div>
+                    <h3>Oferte exclusive</h3>
+                    <p>Acces la reduceri și cadouri speciale, disponibile doar pentru abonați.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        </svg>
+                    </div>
+                    <h3>Recomandări personalizate</h3>
+                    <p>Sfaturi adaptate nevoilor tale și ale pielii tale, pentru rezultate vizibile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section class="terms-section">
+        <div class="container">
+            <h2 class="section-title">Transparență și informații despre giveaway</h2>
+            
+            <div class="terms-content">
+                <div class="terms-box">
+                    <h3>Perioada concursului</h3>
+                    <p>Giveaway-ul se desfășoară între <strong>9 și 12 decembrie 2025</strong>. Participările sunt valabile doar în această perioadă.</p>
+                </div>
+                
+                <div class="terms-box">
+                    <h3>Cum alegem câștigătorii</h3>
+                    <p>Câștigătorii vor fi selectați prin <strong>tragere la sorți</strong> dintre toate înscrierile valide (care au îndeplinit ambii pași de participare).</p>
+                </div>
+                
+                <div class="terms-box">
+                    <h3>Anunțarea câștigătorilor</h3>
+                    <p>Câștigătorii vor fi anunțați pe <strong>pagina de Facebook Mayie</strong> și vor fi contactați prin <strong>email</strong> în termen de 48 de ore de la încheierea concursului.</p>
+                </div>
+            </div>
+            
+            <p class="terms-link">
+                <a href="#" class="link-underline">Vezi termenii și condițiile complete ale giveaway-ului</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- TODO: Replace with actual Mayie logo -->
+                    <div class="logo-placeholder">MAYIE</div>
+                    <p>Skincare sincer, bazat pe știință</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Link-uri utile</h4>
+                    <ul>
+                        <li><a href="https://www.mayie.ro" target="_blank">Site Mayie</a></li>
+                        <li><a href="#">Termeni și condiții giveaway</a></li>
+                        <li><a href="#">Politica de confidențialitate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Urmărește-ne</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/mayiecosmetics" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/mayiecosmetics" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mayie. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
