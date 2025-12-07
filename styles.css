@@ -451,16 +451,6 @@ p + p {
     font-size: 0.95rem;
 }
 
-.prize-detail {
-    font-size: 0.95rem;
-    color: var(--color-text);
-}
-
-.prize-note-text {
-    font-size: 0.9rem;
-    color: var(--color-muted);
-}
-
 .prize-alert {
     font-size: 0.9rem;
     color: var(--color-primary-dark);
