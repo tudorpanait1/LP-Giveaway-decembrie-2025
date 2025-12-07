@@ -329,7 +329,13 @@ p + p {
 }
 
 .calendar-day.muted {
-    opacity: 0.4;
+    background: rgba(203, 197, 199, 0.2);
+    border-color: rgba(203, 197, 199, 0.6);
+    color: var(--color-muted);
+}
+
+.calendar-day.muted .day-number {
+    color: var(--color-muted);
 }
 
 .calendar-day.range {
@@ -367,6 +373,10 @@ p + p {
     border-radius: 18px;
     padding: 1.5rem;
     background: var(--color-white);
+}
+
+.highlight-card h3 {
+    margin-bottom: 0.75rem;
 }
 
 /* Participation */
